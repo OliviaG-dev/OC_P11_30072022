@@ -1,16 +1,23 @@
-import { NavLink } from "react-router-dom";
+import PropTypes from 'prop-types';
 
-const Header = () => (
-  <nav>
-    <ul>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/about">About</NavLink>
-      </li>
-    </ul>
-  </nav>
-);
 
-export default Header;
+const Header = ({text, picture}) => {
+    return (
+        <header>
+    <div>
+        <img src={picture.src} alt={picture.alt} />
+        <span>{text}</span>
+    </div>
+    </header>
+    )
+}
+
+Header.propTypes = {
+    text: PropTypes.string,
+    picture: PropTypes.shape({
+        src: PropTypes.string,
+        alt: PropTypes.string
+    }).isRequired,   
+}
+
+export default Header
