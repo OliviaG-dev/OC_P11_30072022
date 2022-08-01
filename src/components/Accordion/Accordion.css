@@ -1,0 +1,41 @@
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 63.93rem;
+    margin-bottom: 1.93rem;
+}
+
+.accordion_header {
+    height: 2.93rem;
+    display: flex;
+    align-items: center;
+    flex-direction: wrap;
+    justify-content:space-between;
+    background: #FF6060;
+    color:#FFFFFF;
+    font-size: 1.5em;
+    padding: 0 1rem 0 1rem;
+    border-radius: 0.31rem;
+    cursor: pointer;
+}
+
+.accordion__content {
+    color: #FF6060;
+    font-size: 1.5em;
+    text-align: start;
+    padding: 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion__content__show {
+    background: #F6F6F6;
+    color: #FF6060;
+    font-size: 1.5em;
+    text-align: start;
+    height: auto;
+    padding: 0.5rem;
+    max-height: 99999;
+}
