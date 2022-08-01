@@ -2,7 +2,7 @@ import propTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 const Card = ({id, cover, title}) => (
-    <Link to={id}>
+    <Link to= {`/detail/${id}`}>
         <div></div>
         <img src={cover} alt={title} />
         <h2>{title}</h2>
