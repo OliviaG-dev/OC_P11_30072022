@@ -13,8 +13,8 @@
     align-items: center;
     flex-direction: wrap;
     justify-content:space-between;
-    background: #FF6060;
-    color:#FFFFFF;
+    background: var(--main-color);
+    color:var(--second-color);
     font-size: 1.5em;
     padding: 0 1rem 0 1rem;
     border-radius: 0.31rem;
@@ -22,17 +22,17 @@
 }
 
 .accordion__content {
-    color: #FF6060;
+    color: var(--main-color);
     font-size: 1.5em;
     text-align: start;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     max-height: 0;
     overflow: hidden;
 }
 
 .accordion__content__show {
     background: #F6F6F6;
-    color: #FF6060;
+    color: var(--main-color);
     font-size: 1.5em;
     text-align: start;
     height: auto;
