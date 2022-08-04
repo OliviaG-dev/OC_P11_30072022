@@ -1,0 +1,10 @@
+.rating {
+    width: 9.37rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating__img {
+    margin-right: 0.62rem;
+}
