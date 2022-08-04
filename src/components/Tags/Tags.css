@@ -1,0 +1,13 @@
+.tags {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    font-size: 0.87rem;
+    border-radius: 0.62rem;
+    padding: 0.37rem;
+    padding-left: 1.87rem;
+    padding-right: 1.87rem;
+    margin-right: 0.62rem;
+    text-align: center;
+    width: fit-content;
+
+}
