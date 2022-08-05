@@ -15,7 +15,9 @@ const About = () => {
     <main className="about__accordion" >
         {
             AboutData.map((about) => {
-                return <Accordion key={about.id} id={about.id} title={about.title} content={about.text} />
+                return <Accordion key={about.id} id={about.id} title={about.title}>
+                    {about.text}
+                </Accordion>
             })
         }
     </main>

@@ -1,6 +1,78 @@
-.main__tags {
+
+
+/***************** SECTION HEADER *************************/
+.section__header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
     display: flex;
     width: 100%;
-    flex-direction: row;
-    align-items: center;
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.header__info__title h2 {
+    font-size: 2.25rem;
+    line-height: 3.2rem
+}
+
+.header__info__title p {
+    font-size: 1.12rem;
+    line-height: 1.60rem;
+    margin-bottom: 1.56rem;
+}
+
+.header__info__tags {
+    display: flex;
+}
+
+.header__host {
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+    justify-content: space-between;
+}
+
+.header__host__name{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__host__name span {
+    font-size: 1.12rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    width: 50%;
+    text-align: right;
+    Line-height: 1.6rem;
+}
+
+.header__host__name img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/***************** SECTION CONTENT *************************/
+
+.section__content__accordion {
+    margin-top: 1.87rem;
+    width: 100%;
+}
+.content__accordion__list {
+    font-size: 1.12rem;
+    line-height: 1.6;
+}
+
+.content__accordion__describe { 
+    font-size: 1.12rem;
+    line-height: 1.6;
+}
+
+.content__accordion__title {
+    width: 50%;
 }

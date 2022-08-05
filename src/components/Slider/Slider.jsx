@@ -36,10 +36,13 @@ const Slider = ({ picture }) => {
         );
       })}
 
-      <p>{slideIndex}/{picture.length}</p>
+      
       <div className="slider__navigation">
+        <div className="slider__navigation__arrow">
         <BtnSlider moveSlide={prevSlide} direction={"prev"} />
         <BtnSlider moveSlide={nextSlide} direction={"next"} />
+        </div>
+        <p>{slideIndex}/{picture.length}</p>
       </div>
     </div>
   );
