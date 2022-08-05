@@ -1,8 +1,8 @@
 .rating {
-    width: 9.37rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-flow: row nowrap;
 }
 
 .rating__img {

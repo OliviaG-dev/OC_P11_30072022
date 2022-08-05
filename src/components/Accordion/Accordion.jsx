@@ -4,7 +4,7 @@ import ArrowDown from "../../assets/ArrowDown.svg"
 import ArrowUp from "../../assets/ArrowUp.svg"
 import "./Accordion.css"
 
-const Accordion = ({content, title, i}) => {
+const Accordion = ({children, title, i}) => {
 
 const [selected, setSelected] = useState(null)
 const toogle = (i) => {
@@ -24,13 +24,15 @@ const toogle = (i) => {
             </div>
         </div>
         <div className= 
-        { selected === i ? "accordion__content__show" :  "accordion__content"}>{content}</div>
+        { selected === i ? "accordion__content__show" :  "accordion__content"}>
+            {children}
+            </div>
     </section>
     )
 }
 
 Accordion.propTypes ={
-    content: propTypes.oneOfType([propTypes.string, propTypes.array]),
+    children: propTypes.node.isRequired,
     titre: propTypes.string 
 }
 
