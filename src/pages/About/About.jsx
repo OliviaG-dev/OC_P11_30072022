@@ -13,6 +13,7 @@ const About = () => {
     <>
         <Header text={''} picture={{src:ImageAbout, alt:'image paysage'}}/>
     <main className="about__accordion" >
+        <section className="accordion__container">
         {
             AboutData.map((about) => {
                 return <Accordion key={about.id} id={about.id} title={about.title}>
@@ -20,6 +21,7 @@ const About = () => {
                 </Accordion>
             })
         }
+        </section>
     </main>
     
     

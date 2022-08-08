@@ -1,0 +1,17 @@
+.footer {
+    color: var(--second-color);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #000;
+    height: 13.06rem;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.footer img {
+    width: 7.62rem;
+    margin-bottom: 1.78rem;
+}
+

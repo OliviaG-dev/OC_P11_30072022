@@ -7,10 +7,15 @@ const NavBar = () => (
     <img className="navbar__logo" src={Logo} alt={Logo} />
     <ul className="navbar__link">
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/"
+        className={({ isActive }) => 
+                            (isActive ? "Link__active" : "Link" )}>Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/about"
+        className={({ isActive }) => 
+        (isActive ? "Link__active" : "Link" )}>About</NavLink>
       </li>
     </ul>
   </nav>

@@ -45,7 +45,7 @@ const Detail = () => {
       </section>
 
       <section className="section__content">
-        <div className="section__content__accordion">
+        <div className="section__content__describe">
           <Accordion 
             key={housingData.id}
             id={housingData.id}
@@ -53,11 +53,13 @@ const Detail = () => {
             >
             <div className="content__accordion__describe">{housingData.description}</div>
           </Accordion>
-
+          </div>
+          
+          <div className="section__content__list">
           <Accordion
             key={housingData.id}
             id={housingData.id}
-            title="Équipement"
+            title="Équipements"
           >
             <ul>
               {housingData?.equipments.map((equipement, index) => (
@@ -67,7 +69,7 @@ const Detail = () => {
               ))}
             </ul>
           </Accordion>
-        </div>
+          </div>
       </section>
     </main>
   );

@@ -1,0 +1,20 @@
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.header img {
+    height: 13.93rem;
+    border-radius: 1.56rem;
+    width: 100%;
+}
+
+.header span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--second-color);
+    font-weight: 500;
+}
