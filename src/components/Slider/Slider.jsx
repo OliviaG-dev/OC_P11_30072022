@@ -5,7 +5,7 @@ import BtnSlider from "./BtnSlider";
 
 const Slider = ({ picture }) => {
   const [slideIndex, setSlideIndex] = useState(1);
-
+  console.log(slideIndex);
   const nextSlide = () => {
     if (slideIndex !== picture.length) {
       setSlideIndex(slideIndex + 1);
@@ -26,23 +26,25 @@ const Slider = ({ picture }) => {
     <div className="slider__container">
       {picture.map((picture, index) => {
         return (
-          <div key={index} className={slideIndex === index + 1 ? "slide" : "slide__hidden"}>
-            <img
-              src={picture}
-              id={`picture-${index}`}
-              alt=""
-            />
+          <div
+            key={index}
+            className={slideIndex === index + 1 ? "slide" : "slide__hidden"}
+          >
+            <img src={picture} id={`picture-${index}`} alt="" />
           </div>
         );
       })}
 
-      
       <div className="slider__navigation">
-        <div className="slider__navigation__arrow">
-        <BtnSlider moveSlide={prevSlide} direction={"prev"} />
-        <BtnSlider moveSlide={nextSlide} direction={"next"} />
-        </div>
-        <p>{slideIndex}/{picture.length}</p>
+        {slideIndex > 1 && (
+          <div className="slider__navigation__arrow">
+            <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+            <BtnSlider moveSlide={nextSlide} direction={"next"} />
+          </div>
+        )}
+        <p>
+          {slideIndex}/{picture.length}
+        </p>
       </div>
     </div>
   );
