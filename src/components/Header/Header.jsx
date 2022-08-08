@@ -5,7 +5,7 @@ import "./Header.css"
 const Header = ({text, picture}) => {
     return (
     <header>
-        <div>
+        <div className='header'>
             <img src={picture.src} alt={picture.alt}></img>
             <span>{text}</span>
         </div>

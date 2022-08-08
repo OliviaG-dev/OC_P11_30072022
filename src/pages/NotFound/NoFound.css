@@ -1,0 +1,25 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--main-color);
+}
+
+.error h1{
+    margin-top: 10.56rem;
+    font-weight: 700;
+    font-size: 18rem;
+}
+
+.error p {
+    margin: 4.12rem 0 11.37rem 0;
+    font-weight: 500;
+    font-size: 2.25rem;
+}
+
+.error a {
+    color: var(--main-color);
+    font-size: 1.12rem;
+}

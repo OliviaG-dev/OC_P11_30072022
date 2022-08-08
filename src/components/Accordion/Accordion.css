@@ -1,9 +1,6 @@
 
 .accordion {
-    display: flex;
-    flex-direction: column;
     height: auto;
-    width: 63.93rem;
     margin-bottom: 1.93rem;
 }
 
@@ -33,8 +30,6 @@
     background: #F6F6F6;
     color: var(--main-color);
     font-size: 1.5em;
-    text-align: start;
     height: auto;
-    padding: 0.5rem;
-    max-height: 99999;
+    padding: 1.93rem 1.68rem 1.18rem 1.12rem;
 }

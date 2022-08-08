@@ -5,6 +5,7 @@ import NavBar from "../NavBar/NavBar";
 import Home from "../../pages/Home/Home";
 import About from "../../pages/About/About";
 import Detail from "../../pages/Detail/Detail"
+import Footer from "../../components/Footer/Footer"
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/detail/:id" element={<Detail />}  />
       </Routes>
+
+      <Footer />
     </div>
   );
 }

@@ -1,11 +1,14 @@
 import propTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import "./Card.css"
 
 const Card = ({id, cover, title}) => (
-    <Link to= {`/detail/${id}`}>
-        <div></div>
-        <img src={cover} alt={title} />
-        <h2>{title}</h2>
+    <Link className="container__card" to= {`/detail/${id}`}>
+        <div className='card'> 
+            <img src={cover} alt={title} />
+            <div className='overlay'></div>
+            <h2>{title}</h2>
+        </div>
     </Link>
 )
 

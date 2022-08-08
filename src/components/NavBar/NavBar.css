@@ -4,8 +4,31 @@
     height: 9.5rem;
     justify-content:space-around;
     align-items: center;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .navbar__logo {
     height: 4.25rem;
 }
+
+.navbar__link{
+    display: flex;
+    margin-left: 3.56rem;
+}
+
+.navbar__link li a{
+    margin-left: 3.56rem;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.Link__active {
+    text-decoration: none;
+    border-bottom: solid 1px var(--main-color);    
+    border: 1;
+}
+
+.link {
+    border: none;
+} 

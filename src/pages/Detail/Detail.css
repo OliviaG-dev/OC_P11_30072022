@@ -59,10 +59,20 @@
 
 /***************** SECTION CONTENT *************************/
 
-.section__content__accordion {
+.section__content {
     margin-top: 1.87rem;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.87rem;
 }
+
+.section__content__describe, .section__content__list{
+    width: 36.37rem;
+    
+}
+
+
 .content__accordion__list {
     font-size: 1.12rem;
     line-height: 1.6;
@@ -73,6 +83,3 @@
     line-height: 1.6;
 }
 
-.content__accordion__title {
-    width: 50%;
-}
