@@ -2,7 +2,7 @@
 .navbar {
     display:flex;
     height: 9.5rem;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     font-weight: 500;
     font-size: 1.5rem;
@@ -14,7 +14,6 @@
 
 .navbar__link{
     display: flex;
-    margin-left: 3.56rem;
 }
 
 .navbar__link li a{
@@ -32,3 +31,18 @@
 .link {
     border: none;
 } 
+
+@media (max-width: 500px) { 
+    .navbar{
+        height: 5.18rem;
+        font-size: 0.75rem;
+    }
+
+    .navbar__logo {
+        height: 2.93rem;
+    }
+
+    .navbar__link li a {
+        margin-left: 0.62rem;
+    }
+}

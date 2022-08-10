@@ -7,9 +7,23 @@
     height: 13.93rem;
     border-radius: 1.56rem;
     width: 100%;
+    object-fit:cover;
+    position: relative;
 }
 
-.header span {
+.header__overlay {
+    background: #000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+    position: absolute;
+    top: -0.09rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,4 +31,20 @@
     font-size: 3rem;
     color: var(--second-color);
     font-weight: 500;
+}
+
+@media (max-width: 500px) { 
+    .header {
+        text-align: start;
+    }
+
+    .header img{
+        height: 6.63rem;
+    }
+
+    .header p {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        width: 100%;
+    }
 }

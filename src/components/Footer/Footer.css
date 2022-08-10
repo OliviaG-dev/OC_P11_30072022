@@ -15,3 +15,8 @@
     margin-bottom: 1.78rem;
 }
 
+@media (max-width: 500px) {
+    .footer p {
+        font-size: 0.75rem;
+    }
+}

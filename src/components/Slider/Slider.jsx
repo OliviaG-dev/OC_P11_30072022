@@ -36,7 +36,7 @@ const Slider = ({ picture }) => {
       })}
 
       <div className="slider__navigation">
-        {slideIndex > 1 && (
+        {picture.length > 1 && (
           <div className="slider__navigation__arrow">
             <BtnSlider moveSlide={prevSlide} direction={"prev"} />
             <BtnSlider moveSlide={nextSlide} direction={"next"} />

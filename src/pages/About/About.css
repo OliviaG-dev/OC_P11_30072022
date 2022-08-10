@@ -12,3 +12,9 @@
     width: 63.93rem;
     margin-top: 1.93rem;
 }
+
+@media (max-width: 500px) {
+    .accordion__container {
+        width: auto;
+    }
+}

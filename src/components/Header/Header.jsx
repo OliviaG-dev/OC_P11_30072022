@@ -7,7 +7,8 @@ const Header = ({text, picture}) => {
     <header>
         <div className='header'>
             <img src={picture.src} alt={picture.alt}></img>
-            <span>{text}</span>
+            <div className='header__overlay'></div>
+            <p>{text}</p>
         </div>
     </header>
     )
