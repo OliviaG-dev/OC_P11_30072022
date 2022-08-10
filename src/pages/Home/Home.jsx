@@ -20,7 +20,7 @@ const Home = () => {
       {
         housingData.map(({id, title, cover}) => {            
           return  <Card key={id} id={id} title={title} cover={cover} />
-        })
+        }) 
       }
 
       </section>

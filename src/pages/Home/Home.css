@@ -12,11 +12,12 @@
     flex-wrap: wrap;
 }
 
-/* .card {
-    width: 21.25rem;
-    height: 21.25rem;
-    border-radius: 0.62rem;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    object-fit: cover;
-} */
+
+@media (max-width: 500px) {
+    .home__container {
+        background: none;
+        padding-top: 0;
+        margin-top: 1.37rem;
+    }
+}
 

@@ -1,3 +1,9 @@
 .App__container {
     margin: 0 6.25rem;
 }
+
+@media (max-width: 1045px) { 
+    .App__container{
+        margin: 0 1.25rem;
+    }
+}

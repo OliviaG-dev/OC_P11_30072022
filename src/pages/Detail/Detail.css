@@ -69,9 +69,7 @@
 
 .section__content__describe, .section__content__list{
     width: 36.37rem;
-    
 }
-
 
 .content__accordion__list {
     font-size: 1.12rem;
@@ -83,3 +81,10 @@
     line-height: 1.6;
 }
 
+/*****************Responsive*******************************/
+
+/* @media (max-width: 500px) {
+    .section__header {
+        
+    }
+} */
