@@ -83,8 +83,58 @@
 
 /*****************Responsive*******************************/
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
     .section__header {
-        
+        flex-direction: column;
     }
-} */
+
+    .header__info__title h2 {
+        font-size: 1.12rem;
+        line-height: 1.60rem;
+    }
+
+    .header__info__title span {
+        font-size: 0.87rem;
+        margin-bottom: 0.62rem;
+        padding-right: 0.65rem;
+    }
+
+    .header__info__tags {
+        flex-wrap: wrap;
+    }
+
+    .header__host {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .header__host__name{
+        align-items: center;
+        width: 5.81rem;
+    }
+
+    .header__host__name img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .header__host__name span {
+        font-size: 0.75rem;
+        line-height: 1.06rem;
+    }
+
+    .section__content {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .section__content__describe, .section__content__list{
+        width: auto;
+    }
+    
+    .content__accordion__describe, .content__accordion__list {
+        font-size: 0.75rem;
+    }
+}

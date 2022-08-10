@@ -8,3 +8,12 @@
 .rating__img {
     margin-right: 0.62rem;
 }
+
+@media (max-width: 500px) {
+    .rating__img {
+        height: 0.93rem;
+        width: 0.93rem;
+        margin-right: 0.31rem;
+    }
+}
+

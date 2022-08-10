@@ -4,7 +4,7 @@
     margin-bottom: 1.93rem;
 }
 
-.accordion_header {
+.accordion__header {
     height: 2.93rem;
     display: flex;
     align-items: center;
@@ -33,3 +33,16 @@
     height: auto;
     padding: 1.93rem 1.68rem 1.18rem 1.12rem;
 }
+
+@media (max-width: 500px) {
+    .accordion__header {
+        font-size: 0.81rem;       
+    }
+
+    .accordion__content__show {
+        padding: 1.43rem 0.43rem 0.08rem 0.71rem;
+        font-size: 0.75rem;
+        line-height: 1.06rem;
+    }
+}
+

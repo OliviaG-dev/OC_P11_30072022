@@ -14,10 +14,10 @@ const Detail = () => {
   const housingData = data.getHousing(id);
 
   if (!housingData) {
-    console.log("errorData");
     return <NoFound />;
   }
-  console.log("rerender");
+  
+  
   return (
     <main className="main__detail">
       <Slider picture={housingData.pictures} />
@@ -49,7 +49,7 @@ const Detail = () => {
           <Accordion 
             key={housingData.id}
             id={housingData.id}
-            title="description"
+            title="Description"
             >
             <div className="content__accordion__describe">{housingData.description}</div>
           </Accordion>
