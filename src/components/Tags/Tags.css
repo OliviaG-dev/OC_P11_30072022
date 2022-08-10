@@ -11,3 +11,17 @@
     width: fit-content;
 
 }
+
+@media (max-width: 500px) {
+    .tags {
+        font-size: 0.62rem;
+        margin-right: 0.62rem;
+        padding-left: 1.81rem;
+        padding-right: 1.81rem;
+        display: flex;
+        align-items: center;
+        height: 1.12rem;
+        min-width: fit-content;
+        margin-top: 0.4rem;
+    }
+}

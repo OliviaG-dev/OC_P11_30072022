@@ -9,13 +9,13 @@ const NavBar = () => (
       <li>
         <NavLink to="/"
         className={({ isActive }) => 
-                            (isActive ? "Link__active" : "Link" )}>Home
+                            (isActive ? "Link__active" : "Link" )}>ACCUEIL
         </NavLink>
       </li>
       <li>
         <NavLink to="/about"
         className={({ isActive }) => 
-        (isActive ? "Link__active" : "Link" )}>About</NavLink>
+        (isActive ? "Link__active" : "Link" )}>A PROPOS</NavLink>
       </li>
     </ul>
   </nav>

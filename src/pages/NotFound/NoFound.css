@@ -23,3 +23,22 @@
     color: var(--main-color);
     font-size: 1.12rem;
 }
+
+@media (max-width: 500px) {
+    .error h1 {
+        font-size: 6rem;
+    }
+
+    .error p {
+        font-size: 1.12rem;
+        line-height: 1.60rem;
+        width: 16.25rem;
+        text-align: center;
+        margin: 0.68rem 0 8.31rem 0;
+    }
+
+    .error a {
+        margin-bottom: 6.68rem;
+        font-size: 0.87rem;
+    }
+}

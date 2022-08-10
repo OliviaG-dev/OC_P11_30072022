@@ -17,8 +17,8 @@ const toogle = (i) => {
 
     return(
     <section className="accordion">
-        <div className="accordion_header" onClick={() => toogle(i)}>
-            <div className="accordion_header_title">{title}</div>
+        <div className="accordion__header" onClick={() => toogle(i)}>
+            <div className="accordion__header__title">{title}</div>
             <div>
                 {selected === i ? <img src={ArrowUp} alt={ArrowUp} /> : <img src={ArrowDown} alt={ArrowDown} />}
             </div>
