@@ -5,7 +5,7 @@ import BtnSlider from "./BtnSlider";
 
 const Slider = ({ picture }) => {
   const [slideIndex, setSlideIndex] = useState(1);
-  console.log(slideIndex);
+
   const nextSlide = () => {
     if (slideIndex !== picture.length) {
       setSlideIndex(slideIndex + 1);
@@ -35,17 +35,17 @@ const Slider = ({ picture }) => {
         );
       })}
 
-      <div className="slider__navigation">
-        {picture.length > 1 && (
+      {picture.length > 1 && (
+        <div className="slider__navigation">
           <div className="slider__navigation__arrow">
             <BtnSlider moveSlide={prevSlide} direction={"prev"} />
             <BtnSlider moveSlide={nextSlide} direction={"next"} />
           </div>
-        )}
-        <p>
-          {slideIndex}/{picture.length}
-        </p>
-      </div>
+          <p>
+            {slideIndex}/{picture.length}
+          </p>
+        </div>
+      )}
     </div>
   );
 };

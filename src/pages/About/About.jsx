@@ -8,7 +8,6 @@ const About = () => {
     const data = new Data();
     const AboutData = data.getDataAbout();
     
-    console.log(AboutData);
     return(
     <>
         <Header text={''} picture={{src:ImageAbout, alt:'image paysage'}}/>
